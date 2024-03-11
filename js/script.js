@@ -58,18 +58,24 @@ template
 
 */
 
+/* 
+Scrivi un programma che stampi in console i numeri da 1 a 100,
+ma che per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di 5 stampi “Buzz”.
+Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
+*/
+
 const squareWrapper = document.createElement('div');
 //console.log(typeof squareWrapper);
 
 squareWrapper.className = 'd-flex justify-content-between align-content-center flex-wrap';
 squareWrapper.setAttribute('id','boxes');
-//console.dir(squareWrapper);
+console.dir(squareWrapper);
 
-let numBox = 100;
+let numBox=100;;
 let tmpHtml = '';
 
 for(let i = 0; i < numBox; i++){
-    tmpHtml += ` <div class="box">${i + 1}</div>`;
+    tmpHtml += `<div class="box">${i + 1}</div>`;
 }
 
 squareWrapper.innerHTML = tmpHtml;
@@ -78,3 +84,4 @@ console.dir(squareWrapper);
 
 const container = document.querySelector('.container');
 container.append(squareWrapper);
+
